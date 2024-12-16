@@ -1,0 +1,15 @@
+"use strict";
+
+const phonebook = [
+  { name: "Sonia", phone: "+380985673983" },
+  { name: "Alina", phone: "+380634576543" },
+  { name: "Nika", phone: "+380712345678" },
+];
+const findPhoneByName = (name) => {
+  for (const i of phonebook) {
+    if (i.name === name) return i.phone;
+  }
+};
+console.log(findPhoneByName("Nika"));
+
+module.exports = { phonebook, findPhoneByName };
